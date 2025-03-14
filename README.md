@@ -64,7 +64,7 @@ The development of this system emphasizes modularity and maintainability. The <c
 - [X] Request Validation Model;
 - [X] Product Listing Service;
 - [X] Product Listing Route;
-- [ ] Product Registration Service;
+- [X] Product Registration Service;
 - [ ] Product Registration Route;
 - [ ] Product Modification Service;
 - [ ] Product Modification Route;
