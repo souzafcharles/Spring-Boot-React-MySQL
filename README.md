@@ -60,9 +60,9 @@ The development of this system emphasizes modularity and maintainability. The <c
 - [X] Table Generation;
 - [X] Project Structuring;
 - [X] Repository Configuration;
-- [ ] Controller Configuration;
-- [ ] Request Validation Model;
-- [ ] Product Listing Service;
+- [X] Controller Configuration;
+- [X] Request Validation Model;
+- [X] Product Listing Service;
 - [ ] Product Listing Route;
 - [ ] Product Registration Service;
 - [ ] Product Registration Route;
