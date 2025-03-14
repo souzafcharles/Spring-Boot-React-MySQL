@@ -24,7 +24,7 @@ public class ProductService {
     }
 
     @Transactional
-    public ResponseEntity<?> create(Product product) {
+    public ResponseEntity<?> createUpdate(Product product, String action) {
         if (product.getName() == null || product.getName().trim().isEmpty()) {
             response.setMessage("Product name is a mandatory field.");
             return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
@@ -32,7 +32,11 @@ public class ProductService {
             response.setMessage("Product brand is a mandatory field.");
             return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);
         } else {
-            return new ResponseEntity<>(repository.save(product), HttpStatus.CREATED);
+            if (action.equals("register")) {
+                return new ResponseEntity<>(repository.save(product), HttpStatus.CREATED);
+            } else {
+                return new ResponseEntity<>(repository.save(product), HttpStatus.OK);
+            }
         }
     }
 }

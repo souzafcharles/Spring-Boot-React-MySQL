@@ -29,14 +29,14 @@ The development of this system emphasizes modularity and maintainability. The <c
 
 ## Backend Project Stack:
 
-| Technology            | Version | Description                                       |
-| --------------------- | ------- | ------------------------------------------------- |
-| 📐 Visual Studio Code | `1.98`  | Integrated Development Environment (IDE)          |
-| ☕ Java               | `21`    | Backend programming language                      |
-| 🌱 Spring Boot        | `3.4.3` | Framework for creating Spring applications        |
-| 🐦 Maven              | `3.9.9` | Build automation and dependency management tool   |
-| 🐬 MySQL              | `9.2.0` | Open-source relational database management system |
-| 👩‍🚀 Postman            | `11.19` | API testing and development tool                  |
+| Technology            | Version  | Description                                           |
+| --------------------- | ---------| ------------------------------------------------------|
+| 📐 Visual Studio Code | `1.98`   | Integrated Development Environment (IDE)              |
+| ☕ Java               | `21`     | Backend programming language                          |
+| 🌱 Spring Boot        | `3.4.3`  | Framework for creating Spring applications            |
+| 🐦 Maven              | `3.9.9`  | Build automation and dependency management tool       |
+| 🐬 MySQL              | `9.2.0`  | Open-source relational database management system     |
+| ⚡ Thunder Client     | `2.34.0` | Hand-crafted lightweight Rest Client for testing APIs |
 
 ---
 
@@ -65,8 +65,8 @@ The development of this system emphasizes modularity and maintainability. The <c
 - [X] Product Listing Service;
 - [X] Product Listing Route;
 - [X] Product Registration Service;
-- [ ] Product Registration Route;
-- [ ] Product Modification Service;
+- [X] Product Registration Route;
+- [X] Product Modification Service;
 - [ ] Product Modification Route;
 - [ ] Product Removal Service;
 - [ ] Product Removal Route;

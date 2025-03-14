@@ -14,12 +14,12 @@ public class ProductController {
 
 
     @PostMapping("/register")
-    public ResponseEntity<?> create(@RequestBody Product product){
-        return service.create(product);
+    public ResponseEntity<?> create(@RequestBody Product product) {
+        return service.createUpdate(product, "register");
     }
 
     @GetMapping("/list")
-    public Iterable<Product> readAll(){
+    public Iterable<Product> readAll() {
         return service.reaAll();
     }
 
