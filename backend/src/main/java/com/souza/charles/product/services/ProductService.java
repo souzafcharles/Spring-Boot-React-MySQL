@@ -24,7 +24,7 @@ public class ProductService {
     }
 
     @Transactional
-    public ResponseEntity<?> register(Product product) {
+    public ResponseEntity<?> create(Product product) {
         if (product.getName() == null || product.getName().trim().isEmpty()) {
             response.setMessage("Product name is a mandatory field.");
             return new ResponseEntity<>(response, HttpStatus.BAD_REQUEST);

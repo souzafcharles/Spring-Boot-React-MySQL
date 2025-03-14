@@ -10,12 +10,14 @@ import jakarta.persistence.GenerationType;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
 @Getter
 @Setter
 @AllArgsConstructor
+@NoArgsConstructor
 @Table(name = "tb_product")
 public class Product implements Serializable {
 
