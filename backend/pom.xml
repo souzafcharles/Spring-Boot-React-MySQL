@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.souza.charles</groupId>
-	<artifactId>backend</artifactId>
+	<artifactId>product</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>backend</name>
-	<description>Demo project for Spring Boot</description>
+	<name>product</name>
+	<description>The system is designed to facilitate the creation, retrieval, modification, and deletion of product data, providing a robust solution for managing product inventories</description>
 	<url/>
 	<licenses>
 		<license/>

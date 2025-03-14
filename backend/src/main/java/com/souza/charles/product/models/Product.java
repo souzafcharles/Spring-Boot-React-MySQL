@@ -1,6 +1,7 @@
-package com.souza.charles.backend.models;
+package com.souza.charles.product.models;
 
 import java.io.Serializable;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 import jakarta.persistence.Id;
@@ -11,7 +12,7 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
-@Entity 
+@Entity
 @Getter
 @Setter
 @AllArgsConstructor

@@ -58,7 +58,7 @@ The development of this system emphasizes modularity and maintainability. The <c
 - [x] Introduction;
 - [x] Project Creation;
 - [X] Table Generation;
-- [ ] Project Structuring;
+- [X] Project Structuring;
 - [ ] Repository Configuration;
 - [ ] Control Configuration;
 - [ ] Request Validation Model;

@@ -1,4 +1,4 @@
-package com.souza.charles.backend.environments;
+package com.souza.charles.product.environments;
 
 import io.github.cdimascio.dotenv.Dotenv;
 
