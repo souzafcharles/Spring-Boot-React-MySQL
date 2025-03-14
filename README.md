@@ -7,7 +7,7 @@
 
 ---
 
-▶️ Presented by [Ralf Lima Treinamentos em TI](https://ralflima.com/treinamentos/spring_boot_e_react/spring_modulo2_introducao.php)
+▶️ Presented by Ralf Lima [Treinamentos em TI](https://ralflima.com/treinamentos/spring_boot_e_react/spring_modulo2_introducao.php)
 
 ---
 
@@ -59,8 +59,8 @@ The development of this system emphasizes modularity and maintainability. The <c
 - [x] Project Creation;
 - [X] Table Generation;
 - [X] Project Structuring;
-- [ ] Repository Configuration;
-- [ ] Control Configuration;
+- [X] Repository Configuration;
+- [ ] Controller Configuration;
 - [ ] Request Validation Model;
 - [ ] Product Listing Service;
 - [ ] Product Listing Route;
