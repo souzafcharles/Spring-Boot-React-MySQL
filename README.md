@@ -63,7 +63,7 @@ The development of this system emphasizes modularity and maintainability. The <c
 - [X] Controller Configuration;
 - [X] Request Validation Model;
 - [X] Product Listing Service;
-- [ ] Product Listing Route;
+- [X] Product Listing Route;
 - [ ] Product Registration Service;
 - [ ] Product Registration Route;
 - [ ] Product Modification Service;
