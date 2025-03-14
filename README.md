@@ -56,7 +56,7 @@ The development of this system emphasizes modularity and maintainability. The <c
 ## Contents:
 
 - [x] Introduction;
-- [x] Project Creation;
+- [x] Java Spring Project Creation;
 - [X] Table Generation;
 - [X] Project Structuring;
 - [X] Repository Configuration;
@@ -67,7 +67,7 @@ The development of this system emphasizes modularity and maintainability. The <c
 - [X] Product Registration Service;
 - [X] Product Registration Route;
 - [X] Product Modification Service;
-- [ ] Product Modification Route;
+- [X] Product Modification Route;
 - [ ] Product Removal Service;
 - [ ] Product Removal Route;
 - [ ] CORS;

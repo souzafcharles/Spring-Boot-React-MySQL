@@ -12,7 +12,6 @@ public class ProductController {
     @Autowired
     private ProductService service;
 
-
     @PostMapping("/register")
     public ResponseEntity<?> create(@RequestBody Product product) {
         return service.createUpdate(product, "register");
@@ -21,6 +20,11 @@ public class ProductController {
     @GetMapping("/list")
     public Iterable<Product> readAll() {
         return service.reaAll();
+    }
+
+    @PutMapping("/update")
+    public ResponseEntity<?> update(@RequestBody Product product){
+        return service.createUpdate(product, "update");
     }
 
     @GetMapping("/")
