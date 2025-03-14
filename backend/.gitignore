@@ -1,0 +1,64 @@
+# Ignore build folders and generated files
+target/
+bin/
+build/
+
+# Allow only the Maven wrapper JAR file to be included
+!.mvn/wrapper/maven-wrapper.jar
+mvnw
+mvnw.cmd
+
+# Ignore IDE-specific files
+### IntelliJ IDEA ###
+.idea/
+*.iws
+*.iml
+*.ipr
+
+### VS Code ###
+.vscode/
+
+### STS (Spring Tool Suite) ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# Ignore sensitive environments files
+.env
+
+# Ignore log files
+*.log
+
+# Ignore compiled class files
+*.class
+
+# Ignore JVM crash logs
+hs_err_pid*
+replay_pid*
+
+# Ignore compressed and packaged files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Ignore crash dump files
+mintty.exe.stackdump
+bash.exe.stackdump
+
+# Ignore HELP.md file
+HELP.md
