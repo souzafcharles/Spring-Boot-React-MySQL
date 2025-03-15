@@ -11,6 +11,7 @@ function App() {
   };
   const [btnRegister, setBtnRegister] = useState(true);
   const [products, setProducts] = useState([]);
+  const [productObject , setProductObject] = useState(product);
 
   useEffect(() => {
     fetch("http://localhost:8000/list")
@@ -20,6 +21,7 @@ function App() {
 
   return (
     <div>
+      <p>{JSON.stringify(productObject)}</p>
       <Form buttonHidden={btnRegister} />
       <Table vector={products} />
     </div>
