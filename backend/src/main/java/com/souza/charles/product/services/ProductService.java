@@ -39,4 +39,12 @@ public class ProductService {
             }
         }
     }
+
+    @Transactional
+    public ResponseEntity<ResponseProduct> delete(Long code) {
+        repository.deleteById(code);
+        response.setMessage("Product successfully deleted.");
+        return new ResponseEntity<>(response, HttpStatus.OK);
+    }
+
 }
