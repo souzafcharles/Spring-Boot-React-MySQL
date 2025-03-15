@@ -19,10 +19,15 @@ function App() {
       .then((converted_response) => setProducts(converted_response));
   }, []);
 
+  const onType = (event) => {
+    setProductObject({ ...productObject, [event.target.name]: event.target.value });
+  }
+
+
   return (
     <div>
       <p>{JSON.stringify(productObject)}</p>
-      <Form buttonHidden={btnRegister} />
+      <Form buttonHidden={btnRegister} keyboardEvent={onType}  />
       <Table vector={products} />
     </div>
   );
