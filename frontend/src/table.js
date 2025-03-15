@@ -1,4 +1,4 @@
-function Table({ vector }) {
+function Table({ vector, select }) {
   return (
     <table className="table">
       <thead>
@@ -15,7 +15,16 @@ function Table({ vector }) {
             <td>{index + 1}</td>
             <td>{object.name}</td>
             <td>{object.brand}</td>
-            <td><button className="btn btn-success">Select</button></td>
+            <td>
+              <button
+                onClick={() => {
+                  select(index);
+                }}
+                className="btn btn-success"
+              >
+                Select
+              </button>
+            </td>
           </tr>
         ))}
       </tbody>

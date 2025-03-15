@@ -51,10 +51,15 @@ function App() {
     setRegisterButton(true);
   }
 
+  const selectProduct = (index) => {
+    setProductObject(products[index]);
+    setRegisterButton(false);
+  }
+
   return (
     <div>
       <Form buttonHidden={buttonRegister} keyboardEvent={onType} register={register} object={productObject}/>
-      <Table vector={products} />
+      <Table vector={products} select={selectProduct}/>
     </div>
   );
 }

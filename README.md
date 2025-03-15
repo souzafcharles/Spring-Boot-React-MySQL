@@ -83,8 +83,8 @@ The development of this system emphasizes modularity and maintainability. The <c
 - [X] Product useState;
 - [X] Form Data Response;
 - [X] Product Registration;
-- [ ] Form Clearing;
-- [ ] Product Selection;
+- [X] Form Clearing;
+- [X] Product Selection;
 - [ ] Modification and Deletion Cancellation;
 - [ ] Product Removal;
 - [ ] Product Modification;
