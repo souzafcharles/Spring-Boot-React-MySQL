@@ -73,8 +73,8 @@ The development of this system emphasizes modularity and maintainability. The <c
 - [X] CORS;
 - [X] React Project Creation;
 - [X] React Component Creation;
-- [ ] React Form Structure;
-- [ ] React Table Structure;
+- [X] React Form Structure;
+- [X] React Table Structure;
 - [ ] Component Styling;
 - [ ] Button Visibility;
 - [ ] Product Retrieval;
