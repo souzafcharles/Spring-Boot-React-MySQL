@@ -1,11 +1,28 @@
-function Form({ buttonHidden, keyboardEvent }) {
+function Form({ buttonHidden, keyboardEvent, register }) {
   return (
     <form>
-      <input type="text" onChange={keyboardEvent} name="name" placeholder="Name" className="form-control" />
-      <input type="text" onChange={keyboardEvent} name="brand" placeholder="Brand" className="form-control" />
+      <input
+        type="text"
+        onChange={keyboardEvent}
+        name="name"
+        placeholder="Name"
+        className="form-control"
+      />
+      <input
+        type="text"
+        onChange={keyboardEvent}
+        name="brand"
+        placeholder="Brand"
+        className="form-control"
+      />
 
       {buttonHidden ? (
-        <input type="button" value="Register" className="btn btn-primary" />
+        <input
+          type="button"
+          value="Register"
+          className="btn btn-primary"
+          onClick={register} 
+        />
       ) : (
         <div>
           <input type="button" value="Update" className="btn btn-warning" />

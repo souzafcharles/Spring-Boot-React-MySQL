@@ -81,8 +81,8 @@ The development of this system emphasizes modularity and maintainability. The <c
 - [X] Products Display in Table;
 - [X] Product Object;
 - [X] Product useState;
-- [ ] Form Data Retrieval;
-- [ ] Product Registration;
+- [X] Form Data Response;
+- [X] Product Registration;
 - [ ] Form Clearing;
 - [ ] Product Selection;
 - [ ] Modification and Deletion Cancellation;
