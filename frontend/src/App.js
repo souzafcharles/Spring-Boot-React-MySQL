@@ -1,12 +1,12 @@
-import './App.css';
-import Form from './form';
-import Table from './table';
+import "./App.css";
+import Form from "./form";
+import Table from "./table";
 
 function App() {
   return (
-    <div className="App">
-      <Form/>
-      <Table/>
+    <div>
+      <Form />
+      <Table />
     </div>
   );
 }
