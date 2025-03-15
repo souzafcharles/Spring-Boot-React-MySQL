@@ -70,9 +70,9 @@ The development of this system emphasizes modularity and maintainability. The <c
 - [X] Product Modification Route;
 - [X] Product Removal Service;
 - [X] Product Removal Route;
-- [ ] CORS;
-- [ ] React Project Creation;
-- [ ] React Component Creation;
+- [X] CORS;
+- [X] React Project Creation;
+- [X] React Component Creation;
 - [ ] React Form Structure;
 - [ ] React Table Structure;
 - [ ] Component Styling;
