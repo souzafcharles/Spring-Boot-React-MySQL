@@ -1,8 +1,9 @@
-function Form({ buttonHidden, keyboardEvent, register }) {
+function Form({ buttonHidden, keyboardEvent, register, object }) {
   return (
     <form>
       <input
         type="text"
+        value={object.name}
         onChange={keyboardEvent}
         name="name"
         placeholder="Name"
@@ -10,6 +11,7 @@ function Form({ buttonHidden, keyboardEvent, register }) {
       />
       <input
         type="text"
+        value={object.brand}
         onChange={keyboardEvent}
         name="brand"
         placeholder="Brand"

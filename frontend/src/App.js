@@ -8,7 +8,7 @@ function App() {
     name: "",
     brand: "",
   };
-  const [btnRegister, setBtnRegister] = useState(true);
+  const [buttonRegister, setRegisterButton] = useState(true);
   const [products, setProducts] = useState([]);
   const [productObject, setProductObject] = useState(product);
 
@@ -41,13 +41,19 @@ function App() {
         } else {
           setProducts([...products, convertedResponse]);
           alert("Product registered successfully!");
+          clearForm();
         }
       });
   };
 
+  const clearForm = () => {
+    setProductObject(product);
+    setRegisterButton(true);
+  }
+
   return (
     <div>
-      <Form buttonHidden={btnRegister} keyboardEvent={onType} register={register}/>
+      <Form buttonHidden={buttonRegister} keyboardEvent={onType} register={register} object={productObject}/>
       <Table vector={products} />
     </div>
   );
