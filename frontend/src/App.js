@@ -1,11 +1,14 @@
+import {useState} from 'react';
 import "./App.css";
 import Form from "./form";
 import Table from "./table";
 
 function App() {
+  const [btnRegister, setBtnRegister] = useState(true);
+
   return (
     <div>
-      <Form />
+      <Form buttonHidden={btnRegister} />
       <Table />
     </div>
   );

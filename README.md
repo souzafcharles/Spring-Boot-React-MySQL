@@ -75,8 +75,8 @@ The development of this system emphasizes modularity and maintainability. The <c
 - [X] React Component Creation;
 - [X] React Form Structure;
 - [X] React Table Structure;
-- [ ] Component Styling;
-- [ ] Button Visibility;
+- [X] Component Styling;
+- [X] Button Visibility;
 - [ ] Product Retrieval;
 - [ ] Product Display in Table;
 - [ ] Product Object;
