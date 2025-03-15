@@ -68,8 +68,8 @@ The development of this system emphasizes modularity and maintainability. The <c
 - [X] Product Registration Route;
 - [X] Product Modification Service;
 - [X] Product Modification Route;
-- [ ] Product Removal Service;
-- [ ] Product Removal Route;
+- [X] Product Removal Service;
+- [X] Product Removal Route;
 - [ ] CORS;
 - [ ] React Project Creation;
 - [ ] React Component Creation;

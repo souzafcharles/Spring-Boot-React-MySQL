@@ -1,6 +1,7 @@
 package com.souza.charles.product.controllers;
 
 import com.souza.charles.product.models.Product;
+import com.souza.charles.product.models.ResponseProduct;
 import com.souza.charles.product.services.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -25,6 +26,11 @@ public class ProductController {
     @PutMapping("/update")
     public ResponseEntity<?> update(@RequestBody Product product){
         return service.createUpdate(product, "update");
+    }
+
+    @DeleteMapping("/delete/{code}")
+    public ResponseEntity<ResponseProduct> delete(@PathVariable Long code){
+        return service.delete(code);
     }
 
     @GetMapping("/")
