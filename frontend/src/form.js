@@ -1,4 +1,4 @@
-function Form({ buttonHidden, keyboardEvent, register, object }) {
+function Form({ buttonHidden, keyboardEvent, register, object, cancel }) {
   return (
     <form>
       <input
@@ -22,14 +22,14 @@ function Form({ buttonHidden, keyboardEvent, register, object }) {
         <input
           type="button"
           value="Register"
-          className="btn btn-primary"
           onClick={register} 
+          className="btn btn-primary"
         />
       ) : (
         <div>
           <input type="button" value="Update" className="btn btn-warning" />
           <input type="button" value="Delete" className="btn btn-danger" />
-          <input type="button" value="Cancel" className="btn btn-secondary" />
+          <input type="button" value="Cancel" onClick={cancel} className="btn btn-secondary" />
         </div>
       )}
     </form>

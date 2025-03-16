@@ -58,7 +58,7 @@ function App() {
 
   return (
     <div>
-      <Form buttonHidden={buttonRegister} keyboardEvent={onType} register={register} object={productObject}/>
+      <Form buttonHidden={buttonRegister} keyboardEvent={onType} register={register} object={productObject} cancel={clearForm}/>
       <Table vector={products} select={selectProduct}/>
     </div>
   );
