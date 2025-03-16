@@ -53,6 +53,17 @@ The development of this system emphasizes modularity and maintainability. The <c
 
 ---
 
+## Frontend Project Stack:  
+
+| Technology            | Version    | Description                                     |
+|-----------------------|------------|-------------------------------------------------|
+| ✒️Visual Studio Code  | `1.98`     | Integrated Development Environment (IDE)        |
+| ⚛️ React              | `19.0.0`   | Framework for building user interfaces          |
+| 📦 Node.js            | `22.12.0`  | JavaScript runtime environment                  |
+| 🎨 Bootstrap          | `5.3.3`    | CSS framework for responsive web design         |
+
+---
+
 ## Contents:
 
 - [x] Introduction;
@@ -70,22 +81,22 @@ The development of this system emphasizes modularity and maintainability. The <c
 - [X] Product Modification Route;
 - [X] Product Removal Service;
 - [X] Product Removal Route;
-- [X] CORS;
+- [X] Configuring CORS;
 - [X] React Project Creation;
-- [X] React Component Creation;
-- [X] React Form Structure;
-- [X] React Table Structure;
+- [X] Component Creation in React;
+- [X] Form Structure in React;
+- [X] Table Structure in React;
 - [X] Component Styling;
-- [X] Button Visibility;
-- [X] Products Response;
-- [X] Products Display in Table;
-- [X] Product Object;
-- [X] Product useState;
-- [X] Form Data Response;
+- [X] Button Visibility Configuration;
+- [X] Fetching Products;
+- [X] Displaying Products in the Table;
+- [X] Product Object Definition;
+- [X] Initialising Product State (useState);
+- [X] Fetching Form Data;
 - [X] Product Registration;
-- [X] Form Clearing;
+- [X] Clearing the Form;
 - [X] Product Selection;
-- [ ] Modification and Deletion Cancellation;
-- [ ] Product Removal;
+- [X] Cancelling Modifications and Deletions;
+- [X] Product Removal;
 - [ ] Product Modification;
 - [ ] Final Considerations.

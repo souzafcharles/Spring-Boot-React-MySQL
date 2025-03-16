@@ -46,20 +46,85 @@ function App() {
       });
   };
 
+  const update = () => {
+    fetch("http://localhost:8000/update", {
+      method: "put",
+      body: JSON.stringify(productObject),
+      headers: {
+        "Content-type": "application/json",
+        Accept: "application/json",
+      },
+    })
+      .then((response) => response.json())
+      .then((convertedResponse) => {
+        if (convertedResponse.message !== undefined) {
+          alert(convertedResponse.message);
+        } else {
+          alert("Product changed successfully!");
+
+          let tempVector = [...products];
+
+          let index = tempVector.findIndex((p) => {
+            return p.code === productObject.code;
+          });
+
+          tempVector[index] = productObject;
+
+          setProducts(tempVector);
+
+          clearForm();
+        }
+      });
+  };
+
+  const remove = () => {
+    fetch("http://localhost:8000/delete/" + productObject.code, {
+      method: "delete",
+      headers: {
+        "Content-type": "application/json",
+        Accept: "application/json",
+      },
+    })
+      .then((response) => response.json())
+      .then((convertedResponse) => {
+        alert(convertedResponse.message);
+
+        let tempVector = [...products];
+
+        let index = tempVector.findIndex((params) => {
+          return params.code === productObject.code;
+        });
+
+        tempVector.splice(index, 1);
+
+        setProducts(tempVector);
+
+        clearForm();
+      });
+  };
+
   const clearForm = () => {
     setProductObject(product);
     setRegisterButton(true);
-  }
+  };
 
   const selectProduct = (index) => {
     setProductObject(products[index]);
     setRegisterButton(false);
-  }
+  };
 
   return (
     <div>
-      <Form buttonHidden={buttonRegister} keyboardEvent={onType} register={register} object={productObject} cancel={clearForm}/>
-      <Table vector={products} select={selectProduct}/>
+      <Form
+        buttonHidden={buttonRegister}
+        keyboardEvent={onType}
+        register={register}
+        object={productObject}
+        cancel={clearForm}
+        remove={remove}
+        update={update}
+      />
+      <Table vector={products} select={selectProduct} />
     </div>
   );
 }
