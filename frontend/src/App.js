@@ -11,6 +11,7 @@ function App() {
   const [buttonRegister, setRegisterButton] = useState(true);
   const [products, setProducts] = useState([]);
   const [productObject, setProductObject] = useState(product);
+  const [message, setMessage] = useState({ text: "", type: "" }); // Estado da mensagem
 
   useEffect(() => {
     fetch("http://localhost:8000/list")
@@ -37,10 +38,13 @@ function App() {
       .then((response) => response.json())
       .then((convertedResponse) => {
         if (convertedResponse.message !== undefined) {
-          alert(convertedResponse.message);
+          setMessage({ text: convertedResponse.message, type: "error" }); // Erro
         } else {
           setProducts([...products, convertedResponse]);
-          alert("Product registered successfully!");
+          setMessage({
+            text: "Product registered successfully!",
+            type: "success",
+          }); // Sucesso
           clearForm();
         }
       });
@@ -58,20 +62,19 @@ function App() {
       .then((response) => response.json())
       .then((convertedResponse) => {
         if (convertedResponse.message !== undefined) {
-          alert(convertedResponse.message);
+          setMessage({ text: convertedResponse.message, type: "error" });
         } else {
-          alert("Product changed successfully!");
-
           let tempVector = [...products];
-
-          let index = tempVector.findIndex((p) => {
-            return p.code === productObject.code;
-          });
-
+          let index = tempVector.findIndex(
+            (params) => params.code === productObject.code
+          );
           tempVector[index] = productObject;
-
           setProducts(tempVector);
 
+          setMessage({
+            text: "Product updated successfully!",
+            type: "success",
+          });
           clearForm();
         }
       });
@@ -87,18 +90,14 @@ function App() {
     })
       .then((response) => response.json())
       .then((convertedResponse) => {
-        alert(convertedResponse.message);
-
         let tempVector = [...products];
-
-        let index = tempVector.findIndex((params) => {
-          return params.code === productObject.code;
-        });
-
+        let index = tempVector.findIndex(
+          (params) => params.code === productObject.code
+        );
         tempVector.splice(index, 1);
-
         setProducts(tempVector);
 
+        setMessage({ text: convertedResponse.message, type: "success" });
         clearForm();
       });
   };
@@ -106,6 +105,10 @@ function App() {
   const clearForm = () => {
     setProductObject(product);
     setRegisterButton(true);
+  };
+
+  const clearMessage = () => {
+    setMessage({ text: "", type: "" }); 
   };
 
   const selectProduct = (index) => {
@@ -123,7 +126,10 @@ function App() {
         cancel={clearForm}
         remove={remove}
         update={update}
+        message={message} 
+        clearMessage={clearMessage} 
       />
+
       <Table vector={products} select={selectProduct} />
     </div>
   );

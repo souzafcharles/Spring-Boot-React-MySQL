@@ -6,9 +6,38 @@ function Form({
   cancel,
   remove,
   update,
+  message,
+  clearMessage, 
 }) {
   return (
     <form>
+      {message.text && (
+        <div
+          style={{
+            color: message.type === "error" ? "red" : "blue",
+            textAlign: "center",
+            marginBottom: "10px",
+            position: "relative",
+          }}
+        >
+          {message.text}
+          <button
+            onClick={clearMessage} 
+            style={{
+              position: "absolute",
+              right: "10px",
+              top: "0",
+              border: "none",
+              background: "transparent",
+              fontWeight: "bold",
+              fontSize: "16px",
+              cursor: "pointer",
+            }}
+          >
+            X
+          </button>
+        </div>
+      )}
       <input
         type="text"
         value={object.name}

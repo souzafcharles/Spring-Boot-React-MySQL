@@ -11,3 +11,16 @@ form input {
 form input[type="button"] {
   margin-right: 10px;
 }
+
+form div button {
+  color: black;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+form div button:hover {
+  color: red;
+}
